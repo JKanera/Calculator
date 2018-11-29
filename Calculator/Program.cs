@@ -16,6 +16,20 @@ namespace Calculator
             //Vypocita koreny
             //Vypise vysledek
             //Zepta se na pokracovani
+
+            Calculator calculator = new Calculator();
+            calculator.ReadEquation();
+            if(calculator.isEquationValid())
+            {
+                Console.WriteLine("Rovnice je spravne, pokracujem ...");
+            } else
+            {
+                Console.WriteLine("Rovnice je spatne, znovu.");
+            }
+
+            calculator.printVariables();
+
+            Console.ReadLine();
         }
     }
 }
