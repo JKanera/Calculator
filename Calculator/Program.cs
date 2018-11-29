@@ -26,6 +26,11 @@ namespace Calculator
             {
                 Console.WriteLine("Rovnice je spatne, znovu.");
             }
+            calculator.calculateDiscriminant();
+
+            calculator.calculateRoots();
+
+
 
             calculator.printVariables();
 
